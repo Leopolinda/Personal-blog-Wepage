@@ -1,0 +1,239 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.format {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "hed hed sib"
+    "man man sib"
+    "man man sib"
+    "fot fot sib";
+  grid-template-columns: 300px auto 500px;
+  grid-template-rows: 80px auto 80px;
+}
+.titlebox {
+  grid-area: hed;
+  background-color: #b9d5ec;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  text-shadow: 4px 4px 4px #aaa;
+  color: #7c54da;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  grid-area: man;
+  background-image: url("https://t4.ftcdn.net/jpg/01/87/47/59/360_F_187475954_KuDIRQZbGTwwyMTXZeRmojQH9YeSjrWt.jpg");
+  background-repeat: no-repeat;
+  border: 2px solid rgb(111, 111, 223);
+  box-shadow: -23px 13px 96px 0px rgb(111, 111, 223);
+  background-size: 1700px 900px;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pictures {
+  grid-area: sib;
+  background-color: #b9d5ec;
+  padding: 20px;
+}
+.whoisme {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  color: black;
+  background-color: white;
+  box-shadow: 10px 7px 20px 0px rgb(111, 111, 223);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+  max-width: 1300px;
+}
+.picturebox {
+  list-style-type: none;
+  padding: 0px;
+}
+.picturebox li {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+#picone img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px double #7c54da;
+  box-shadow: 10px 7px 20px 0px rgb(111, 111, 223);
+  object-fit: cover;
+}
+#picone figcaption {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: large;
+  font-weight: bolder;
+  color: #7c54da;
+  margin-top: 10px;
+  background-color: rgba(185, 213, 236, 0.7);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 10px auto 0;
+}
+#backhome {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-size: 30px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #aaa;
+  color: #7c54da;
+}
+#backhome:hover {
+  background-color: #a4c9e7;
+}
+#backhome a {
+  text-decoration: none;
+}
+footer {
+  grid-area: fot;
+  background-color: #b9d5ec;
+}
+.socialstwo {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}
+.socialstwo i {
+  font-size: 42px;
+}
+@media only screen and (max-width: 600px) {
+  .format {
+    grid-template-areas:
+      "hed"
+      "man"
+      "sib"
+      "fot";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .titlebox {
+    font-size: 20px;
+  }
+
+  main {
+    background-size: cover;
+    padding: 20px;
+    max-height: 100%;
+  }
+
+  #picone {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .whoisme {
+    font-size: 10px;
+    max-width: 100%;
+  }
+
+  #backhome {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+  .socialstwo i {
+    font-size: 30px;
+    padding: auto;
+  }
+  .pictures {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .format {
+    grid-template-areas:
+      "hed hed"
+      "man sib"
+      "fot fot";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto 80px;
+  }
+
+  .titlebox {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  main {
+    background-size: cover;
+    padding: 30px;
+    max-height: 100%;
+  }
+
+  #picone img {
+    height: auto;
+    width: 80%;
+  }
+
+  .whoisme {
+    font-size: 15px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #backhome {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .format {
+    grid-template-columns: 300px auto 500px;
+    grid-template-rows: 80px auto 80px;
+  }
+
+  .titlebox {
+    font-size: 60px;
+  }
+
+  main {
+    background-size: 1700px 900px;
+    padding: 50px;
+    max-height: 100%;
+  }
+
+  #picone img {
+    height: 600px;
+    width: 400px;
+  }
+
+  .whoisme {
+    font-size: 25px;
+    max-width: 1300px;
+    max-height: 100%;
+  }
+
+  #backhome {
+    font-size: 30px;
+  }
+}

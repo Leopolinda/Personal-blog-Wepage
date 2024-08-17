@@ -1,0 +1,55 @@
+.layout main {
+  grid-area: ma;
+  background-image: url("https://t4.ftcdn.net/jpg/01/87/47/59/360_F_187475954_KuDIRQZbGTwwyMTXZeRmojQH9YeSjrWt.jpg");
+  background-repeat: no-repeat;
+  border: 2px solid rgb(111, 111, 223);
+  box-shadow: -23px 13px 96px 0px rgb(111, 111, 223);
+  background-size: 1700px 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  width: 18rem;
+  font-size: 0.8rem;
+  background-color: aliceblue;
+  border: 2px solid rgb(111, 111, 223);
+}
+.card-img-top {
+  height: 8rem;
+  width: 18rem;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-decoration: none;
+  color: white;
+  background-color: #7c54da;
+  border: 2px solid #7c54da;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #5a3ea3;
+  color: white;
+}
